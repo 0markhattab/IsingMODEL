@@ -1,0 +1,38 @@
+N = 16
+M = 16
+
+numberTemp = 50
+startTemp  = 0.01
+endTemp    = 5.0
+
+eqSteps = 1000
+measureSteps = 5000
+timeEvolutionTemp = 2.5
+
+algorithm = metropolis  
+
+# or 'wolff OR'
+
+beta_fixed = 3.0
+hMin = -2.0
+hMax = 2.0
+numH = 21
+
+
+my_time = ./data/time.npy
+my_ene  = ./data/ene.npy
+my_mag  = ./data/mag.npy
+
+time_pic    = ./images/timeEvolution.png
+enemag_pic  = ./images/energy_magnetization.png
+
+energy_separate_pic = ./images/energy_vs_temperature.png
+mag_separate_pic    = ./images/magnetization_vs_temperature.png
+
+snapshots_met_pic   = ./images/snapshots_metropolis.png
+snapshots_wolff_pic = ./images/snapshots_wolff.png
+
+my_h_ene    = ./data/h_scan_energies.npy
+my_h_mag    = ./data/h_scan_mags.npy
+my_h_values = ./data/h_values.npy
+m_vs_h_pic  = ./images/m_vs_h.png
